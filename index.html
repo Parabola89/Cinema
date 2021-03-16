@@ -4,8 +4,31 @@
     <head>
         <title>Продажа билетов в кино в Иннополисе</title>
         <style>
-            .class1 {background: url(images/10.png); color: #fff; }
-            .class2 {background: url(images/11.png); color:#fff}
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td,
+            th {
+                padding: 10px;
+                margin: 50px;
+            }
+            .class1 {
+                background: url(images/10.png); color: #fff; }
+            .class2 {
+                background: url(images/11.png); color:#fff}
+            .class3 {
+                background: rgba(163, 204, 64, 1); color: #fff;
+            }
+            .class4 {
+                background: rgba(51, 51, 51, 1); color: #fff
+            }
+            .class5 {
+                background: rgba(76, 77, 79, 1); color: #fff;
+            }
+            .class6{
+                background: rgba(163, 204, 64, 1); color: #fff;
+            }
         </style>
     </head>
     <body>
@@ -13,7 +36,7 @@
         <header>
             <div > 
               <a href ="http://university.innopolis.ru/"><img src=C:\Users\Rinat\Desktop\Cinema\images\Logo.png></a>
-                <span>+7 (800) 355 12-56</span>
+                <span> <a href="tel:+78003551256"> +7 (800) 355 12-56</a> </span>
                 <span>kino@innopolis.ru</span>
                 <span>ул.Спортивная д.1</span>
             </div>
@@ -22,21 +45,21 @@
                 <span>SPEAKERS</span>
                 <span>SPONSORS</span>
                 <span>PAST EVENTS</span>
-                <span>CONTACT</span>
+                <span><a href="#CONTACT">CONTACT</a></span>
             </div>
             <div>
         </header>
             <div>
-                <span>Закажите билет в кино</span>
+                <h1><span>Закажите билет в кино</span></h1>
             </div>
             <div>
-                <span><strong>Всем покупателям подарок!</strong></span>
+               <span><strong>Всем покупателям подарок!</strong></span>
             </div>
         
     
-        <div>
+        <section>
             <div>
-               <p><strong>Добро пожаловать!</strong></p> 
+              <p><strong>Добро пожаловать!</strong></p> 
             </div>
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -46,9 +69,9 @@
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt.
             </div>
-        </div>
+        </section>
     </div>
-        <div>
+        <section>
             <p><strong>Почему мы?</strong></p>
             <img src=C:\Users\Rinat\Desktop\Cinema\images\1.png>
             <img src=C:\Users\Rinat\Desktop\Cinema\images\3.png>
@@ -58,18 +81,37 @@
             <img src=C:\Users\Rinat\Desktop\Cinema\images\2.png>
             <img src=C:\Users\Rinat\Desktop\Cinema\images\5.png>
             <br/><strong>Уютная атмосфера</strong><strong>Полное погружение</strong><strong>Поцелуи на заднем ряду</strong>
-        </div>
-        <div>
+        </section>
+        <section>
             <br/><strong>Выберите фильм</strong>
-            <a>
-                <strong>Начало сеанса Название фильма Жанр</strong>
-                <br/>10:00 <a href="https://www.kinopoisk.ru/film/838/">Человек-паук</a>  Фантастика, боевик, приключения
-                <br/>12:00 <a href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2 </a> Фэнтэзи, драма, комедия
-                <br/>14:00 <a href="https://www.kinopoisk.ru/film/846824/"> История игрушек 4 </a> Мультфильм, фэнтэзи, комедия
-                <br/>16:00 <a href="https://www.kinopoisk.ru/film/1091/"> Люди в чёрном: Интэрнэшнл </a> Фантастика, боевик, комедия
+            <p>
+                <table>
+                    <tr class="class3">
+                 <th>Начало сеанса</th>
+                 <th>Название фильма</th>
+                 <th>Жанр</th>
+                    </tr> 
+                <tr class="class4">
+                <td>10:00</td> <td><a href="https://www.kinopoisk.ru/film/838/">Человек-паук</a></td> <td>Фантастика, боевик, приключения</td> 
+                </tr>
+                
+                <tr class="class5">
+                    <td>12:00</td> <td><a href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2 </a></td><td>Фэнтэзи, драма, комедия</td> 
+                </tr>
+               
+                <tr class="class4">
+                   <td>14:00</td> <td><a href="https://www.kinopoisk.ru/film/846824/"> История игрушек 4 </a></td> <td>Мультфильм, фэнтэзи, комедия</td> 
+                </tr>
+                <tr class="class5">
+                   <td>16:00</td> <td> <a href="https://www.kinopoisk.ru/film/1091/"> Люди в чёрном: Интэрнэшнл </a></td> <td>Фантастика, боевик, комедия</td>
+                </tr>
+                    
+                
+            </table>
+                
             </p>
-        </div>
-            <div>
+        </section>
+            <section>
                 <img style="float:left" src=C:\Users\Rinat\Desktop\Cinema\images\Podarok.png height="303" width="302">
             <div>
                 <p><strong>Подарок каждому!</strong></p>
@@ -91,8 +133,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </div>
-            </div>
-        <div>
+            </section>
+        <section>
             <div>
               <br/> <p><strong>Фильмы</strong></p> 
             <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -106,8 +148,8 @@
                         <img src=C:\Users\Rinat\Desktop\Cinema\images\IM.png>
                         <img src=C:\Users\Rinat\Desktop\Cinema\images\MST.png></p>
             </div>
-        </div>
-            <div>
+        </section>
+            <section>
                 <p><strong>Отзывы</strong></p>
                 <div>
                     <img src=C:\Users\Rinat\Desktop\Cinema\images\8.png>
@@ -128,6 +170,48 @@
                  ut labore et dolore magna aliqua. </q>   
                </div>
 
+            </section>
+            <div>
+                <img style="float:left" src=C:\Users\Rinat\Desktop\Cinema\images\12.png height="100" width="99">
+                <strong>Обратная связь</strong>
+                <form action="=/order">
+                    <div>
+                        <label>
+                            <input class="text" id="input1" type="text"
+                            placeholder="Полное имя">
+                        </label>
+                    </div>
+                
+            <div>
+                <label>
+                    <select name="place" required>
+                        <option value="">--Номер места--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input class="text" id="input1" type="text"
+                    placeholder="Напишите свой отзыв">
+                </label>
+            </div>
+            <div>
+                <label for="chb1">
+                    Я согласен на обработку своих персональных данных
+                </label>
+                <input id="chb1" type="checkbox" required
+            </div>
+            <div>
+                <input class="class6" type="button" value="Послать">
+            </div>
+        </form>
             </div>
             <div class="class2"
             <footer>
@@ -138,7 +222,7 @@
                    <span>SPEAKERS</span>
                    <span>SPONSORS</span>
                    <span>PAST EVENTS</span>
-                   <span>CONTACT</span>
+                   <span>CONTACT</span><a id="CONTACT"></a>
                 </div>
                     <div>
                         <span><strong>CONTACT</strong></span>
