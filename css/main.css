@@ -3,6 +3,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 849px;
+    margin: auto;
 }
 .table th {
     background: rgba(163, 204, 64, 1); 
@@ -35,7 +36,6 @@
     background: url(../images/11.png); color:#fff}
 
 .table_td1 {
-    
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: normal;
@@ -56,10 +56,12 @@
 .parent_we {
     Width: 849px;
     overflow: hidden;
+    margin: auto;
 }
 .class7_we {
     width: 33.3%;
     float: left;
+
 }
 .why_are_we {
     font-family: IBM Plex Sans;
@@ -77,6 +79,7 @@
     color:#fff
     overflow: hidden;
     height: 792px;
+    margin: auto;
 }
 .reviews {
     font-family: IBM Plex Sans;
@@ -86,4 +89,40 @@
     line-height: 62px;
     color: #A3CC40;
     margin-top: 126px;  
+}
+.class8_reviews1 {
+    margin: 6%;
+    width: 210px;
+    height: 284px;
+    float: left;
+    background: #97B13C;
+    border-radius: 9px;
+    color: #fff;
+}
+.class8_reviews2 {
+    margin: 3%;
+    width: 246px;
+    height: 332px;
+    float: left; 
+    background: #97B13C;
+    border-radius: 10px;
+    color: #fff;
+}
+.parent_films {
+    height: 850px;
+    width: 850px;
+    color:#fff
+    overflow: hidden;
+    margin: auto;
+}
+.class9_films {
+    float: left;
+    margin: auto;
+    width: 283px;
+    height: 283px;
+    background: rgba(144, 210, 61, 0.4);   
+}
+.class9_films img {
+    width: 283px;
+    height: 283px; 
 }
