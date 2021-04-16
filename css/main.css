@@ -334,7 +334,7 @@ form {
     color: #333333; 
 }
 .feedback {
-    width: 38.35rem;
+    width: 42rem;
     height: 28.6rem;
     border-radius: 1rem;
     margin: auto;
@@ -357,8 +357,8 @@ form {
 }
 .feedback_col2 {
     float: left;
-    width: 40%;
-    padding-left: 9%; 
+    width: 45%;
+    padding-left: 6%; 
 }
 .table_td1 {
     font-family: 'IBM Plex Sans';
@@ -573,7 +573,7 @@ img.presents_img {
     color: #fff;
 }
 .parent_films {
-    height: 45.5rem;
+    height: 55rem;
     width: 42.5rem;
     color:#fff;
     overflow: hidden;
