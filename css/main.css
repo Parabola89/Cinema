@@ -421,6 +421,7 @@ form {
     line-height: 3.1rem;
     color: #A3CC40;
     text-align: left;
+    margin-bottom: 6.8rem;
   
 }
 .present {
@@ -508,7 +509,6 @@ img.presents_img {
     background-size: cover;
     color:#fff;
     overflow: hidden;
-    float: left;
     position: relative;
     margin-bottom: 4.05rem;
     margin-top: 2.24rem;
@@ -542,35 +542,56 @@ img.presents_img {
     margin-bottom: 1.3rem;
 }
 .class8_reviews{
+    display: flex;
     width: 42.25rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4.95rem;
 }
 .revievs_text{
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 0.55rem;
     line-height: 0.7rem;
 }
+.reviews_name{
+   font-size: 0.75rem;
+   margin-bottom: 0.65rem;
+}
+.reviews_text1{
+    font-size: 0.5rem;
+    flex: 1;
+}
+.data{
+    font-size: 0.45rem;
+    text-align: right;
+    padding: 0.45rem;
+}
 .class8_reviews1 {
+    display: flex;
+    flex-direction: column;
     width: 10.5rem;
     height: 15rem;
-    float: left;
+    justify-content: space-around;
     background: #97B13C;
     border-radius: 0.45rem;
     color: #fff;
 }
 .class8_reviews2 {
+    display: flex;
+    flex-direction: column;
     margin-left: 4rem;
     margin-right: 4rem;
     width: 12.3rem;
     height: 16rem;
-    float: left; 
+    justify-content: space-around;
     background: #97B13C;
     border-radius: 0.5rem;
     color: #fff;
+}
+*{
+    box-sizing: border-box;
 }
 .parent_films {
     height: 55rem;
@@ -581,12 +602,13 @@ img.presents_img {
     margin-top: 5.95rem;
 }
 .class9_films {
-    float: left;
+    display: flex;
     margin: auto;
     width: 14.15rem;
     height: 14.15rem;
-    background: rgba(144, 210, 61, 0.4);   
-    margin-top: 5.95rem;
+    background: rgba(144, 210, 61, 0.4); 
+    padding: 0;
+    justify-content: center;
 }
 .class9_films img {
     width: 14.15rem;
@@ -595,7 +617,6 @@ img.presents_img {
 .product_conteiner{
     width: 36.95rem;
     margin-left: auto;
-    margin-top: 5.6rem;
     margin-right: auto;
 }
 .product_inner {
@@ -608,7 +629,6 @@ img.presents_img {
     overflow: hidden;
     float: left;
     margin-right: 2.75rem;
-    margin-top: 5.6rem;
 }
 .product_item img {
     display: block;
