@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    .grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: min-content 1fr 1fr 1fr min-content;
+    grid-template-areas: "header header header"
+    "col-1 col-1 col-2"
+    "col-1 col-1 col-3"
+    "col-5 col-6 col-7"
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+.header1 {
+    background: yellow;
+    grid-area: header;
+}
+.footer1{
+    background: #ddd;
+    grid-area: footer;
+    padding: 20px 0;
+}
+
+.child1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background: cyan;
+}
+
+.child2 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background: skyblue;
+    align-self: flex-end;    
+}
+</style>
+
+<body>
+    <div class="grid">
+
+        <div class="child1">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, architecto recusandae
+            doloribus odio veniam illo iste aut, inventore illum voluptate officiis beatae tenetur. Et molestiae
+            veritatis quaerat rem, alias pariatur.</div>
+        <div class="child2">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, architecto
+            recusandae
+            doloribus odio veniam illo iste aut, inventore illum voluptate officiis beatae tenetur. Et molestiae
+            veritatis quaerat rem, alias pariatur.</div>
+
+        <div class="header1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, architecto
+            recusandae
+            doloribus odio veniam illo iste aut, inventore illum voluptate officiis beatae tenetur. Et molestiae
+            veritatis quaerat rem, alias pariatur.</div>
+
+        <div class="child1">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, architecto
+            recusandae
+            doloribus odio veniam illo iste aut, inventore illum voluptate officiis beatae tenetur. Et molestiae
+            veritatis quaerat rem, alias pariatur.</div>
+
+        <div class="child1">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, architecto recusandae
+            doloribus odio veniam illo iste aut, inventore illum voluptate officiis beatae tenetur. Et molestiae
+            veritatis quaerat rem, alias pariatur.</div>
+        <div class="child1">5Lorem ipsum dolor</div>
+        <div class="child1">6Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, architecto
+            recusandae
+            doloribus odio veniam illo iste aut, inventore illum voluptate officiis beatae tenetur. Et molestiae
+            veritatis quaerat rem, alias pariatur.</div>
+        <div class="footer1">Footer</div>
+    </div>
+</body>
+
+</html>
