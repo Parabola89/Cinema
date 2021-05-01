@@ -249,6 +249,8 @@ form {
     display: block;
 }
 .block01_row2 { 
+    font-family:'IBM Plex Sans';
+    font-size: 0.8rem;
     float: left;
     line-height: 2;
     margin: 0;
@@ -372,7 +374,7 @@ form {
 }
 
 .parent_we {
-    Width: 58.55rem;
+    Width: 42.45rem;
     overflow: hidden;
     margin: auto;
     margin-bottom: 0.5rem;
@@ -715,7 +717,7 @@ img.presents_img {
 
 }
 .map{
-    width: 48.65rem;
+    width: 42.45rem;
     height: 21.05rem;
     left: 3.75rem;
     top: 298.1rem;
@@ -791,4 +793,7 @@ img.presents_img {
     float: left;
     margin-left: 1.55rem;
     margin-top: 1.25rem;
+}
+.menu-button{
+    display:none;
 }

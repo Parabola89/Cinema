@@ -1,0 +1,115 @@
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 1.67vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+    html{
+        font-size: 3.2vw;
+    }
+    .block01_ticket{
+        font-size: 2.6rem;
+    }
+    .menu-button{
+        display: block;
+        
+    }
+    .svg_class{
+        float: right;
+    }
+    .menu-wrapper{
+        transform: translateX(100%);
+        position: fixed;
+        padding: 1rem;
+        background: #fff;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        transition: 2s;
+    }
+    .menu-button:hover+.menu-wrapper,
+    .menu-wrapper_opened{
+        transform: translateX(0);
+    }
+    .block01_tel,
+    .block01_mail,
+    .block01_adres,
+    .block01_call,
+    .block01_row2  {
+        color: #333;
+        display: table;
+        float: none;
+        padding-left: 0;
+        display: table;
+    }
+  
+    .block01_row2{
+        display: table;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .link_white {
+        color: #333;
+    
+    }
+    .block01_row2_elements{
+        display: table;
+        margin-left: 0;
+        float: none;
+    }
+   .mobile_hidden {
+       display: none;
+   }
+   .table_wrap{
+       overflow: auto;
+   }
+   .table{
+       min-width: 900px;
+   }
+   .block01_col2 {
+       float: right;
+       margin-top: 1rem;
+       margin-right: 3rem;
+   }
+   .block02_info{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    max-width: 15.3rem;
+    right: 0.55rem;
+    bottom: -2.5rem;}
+
+    .block02_welcome{
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 2.15rem;
+        margin-bottom: 1.1rem;
+        color: #333333;
+    }
+    .block02_text{
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.35rem;
+        line-height: 0.7rem;
+        color: #333333;
+    
+    }
+    .block02_text2{
+        margin-bottom: 0.75rem;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.35rem;
+        line-height: 0.7rem;
+        color: #333333; }
+
+
+}
+
