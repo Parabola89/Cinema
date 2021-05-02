@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+
+    </style>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .flex {
+        display: flex;
+        margin: 0 -15px;
+    }
+
+    .col {
+        padding: 0 15px;
+        flex: 0 0 20%;
+    }
+
+    .inner {
+        background: #eee;
+        font-size: 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col2 {
+        width: 33.33%;
+        float: left;
+    }
+
+    .inner2 {
+        background: yellow;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner2__text {
+        flex: 1;
+    }
+
+    .inner2__text {
+        margin-bottom: 15px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="col">
+                <div class="inner">1<br>2<br>3</div>
+            </div>
+            <div class="col">
+                <div class="inner">1</div>
+            </div>
+            <div class="col">
+                <div class="inner">1<br>2</div>
+            </div>
+            <div class="col">
+                <div class="inner">1</div>
+            </div>
+            <div class="col">
+                <div class="inner">1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flex">
+            <div class="col2">
+                <div class="inner2">
+                    <h2 class="inner2__h2">Header</h2>
+                    <p class="inner2__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique debitis
+                        soluta illum, doloribus ratione, qui eveniet iste ad quasi, fuga placeat consectetur repellendus
+                        veniam ea obcaecati tempora optio quas! Culpa?</p>
+                    <p class="inner2__date">15/04/2021</p>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="inner2">
+                    <h2 class="inner2__h2">Header</h2>
+                    <p class="inner2__text">Lorem ipsum dolor </p>
+                    <p class="inner2__date">15/04/2021</p>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="inner2">
+                    <h2 class="inner2__h2">Header</h2>
+                    <p class="inner2__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique debitis
+                        soluta illum, doloribus ratione,</p>
+                    <p class="inner2__date">15/04/2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

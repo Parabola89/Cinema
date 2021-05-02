@@ -548,7 +548,7 @@ img.presents_img {
     width: 42.25rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4.95rem;
+    margin-top: 1rem;
 }
 .revievs_text{
     font-family: 'IBM Plex Sans';
@@ -556,6 +556,7 @@ img.presents_img {
     font-weight: normal;
     font-size: 0.55rem;
     line-height: 0.7rem;
+    margin-top: 0.55rem;
 }
 .reviews_name{
    font-size: 0.75rem;
@@ -575,7 +576,7 @@ img.presents_img {
     flex-direction: column;
     width: 10.5rem;
     height: 15rem;
-    justify-content: space-around;
+    
     background: #97B13C;
     border-radius: 0.45rem;
     color: #fff;
@@ -583,11 +584,10 @@ img.presents_img {
 .class8_reviews2 {
     display: flex;
     flex-direction: column;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    
     width: 12.3rem;
     height: 16rem;
-    justify-content: space-around;
+    
     background: #97B13C;
     border-radius: 0.5rem;
     color: #fff;
