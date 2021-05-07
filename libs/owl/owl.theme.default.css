@@ -59,4 +59,6 @@
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
       
-      
+      .owl-carousel .owl-stage-outer{
+        padding: 22px;
+      }
