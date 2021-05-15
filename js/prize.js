@@ -17,20 +17,23 @@ function  initializeField(field){
     return {
         getValue() {
             return input.value;
+        },
+        focus(){
+            input.focus() 
         }
+     
     };
 
    }
    
-  
-   
-  
    const nameFieldUtils = initializeField(nameField);
    const emailFieldUtils = initializeField(emailField);
 
-openBtn.onclick = function popupToggle(){
-    popup.classList.toggle('hidden');
-};
+openBtn.addEventListener('click', () => {
+    popupToggle();
+    nameFieldUtils.focus();
+}
+)
 
 closeBtn.onclick = popupToggle;
 
