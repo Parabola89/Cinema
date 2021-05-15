@@ -16,6 +16,10 @@
     top: 22px;
 }
 
+.close:hover{
+    background-image: url('../images/close-hovered.svg');
+}
+
 .form-wrapper{
     position: relative;
     background-color: #fff;
