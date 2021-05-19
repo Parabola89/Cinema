@@ -161,6 +161,11 @@ form {
 .table tr:nth-child(2n+1) td {
     background: rgba(76, 77, 79, 1); 
 }
+.menu_container{
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 .block01 {
     min-height: 100vh;
     background: url('../images/10.png') no-repeat; 
@@ -183,6 +188,7 @@ form {
 }
 .block01_col2 {
     float: left;
+    max-width: 50rem;
 }
 .block01_tel,
 .block01_mail,
@@ -191,7 +197,7 @@ form {
     float: left;
     line-height: 2;
     margin: 0;
-    padding-left: 2.5rem;
+    padding-left: 3.5rem;
     
 }
 
@@ -260,7 +266,7 @@ form {
     float: left;
     line-height: 2;
     margin: 0;
-    padding-right: 2.5rem;
+    padding-right: 5rem;
 }
 .block01_row_contact {
     color: #fff;
