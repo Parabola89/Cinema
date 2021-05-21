@@ -26,7 +26,8 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FIL
         <div>
         <img src="${film.posterUrlPreview}">
         <div class="class9_films_text1">${film.nameRu}</div>    
-            <div id="${id}" class="class9_films_text2">...loading</div>
+        <div id="${id}" class="class9_films_text2">...loading</div>
+        
         </div>
         
         `
