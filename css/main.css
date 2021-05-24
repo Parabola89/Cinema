@@ -803,3 +803,77 @@ img.presents_img {
 .menu-button{
     display:none;
 }
+
+.block-new{
+    min-height: 10vh;
+    background: url("../images/Rectangle 62.png");
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.picture{
+    margin-top: 2rem;
+    float: left;
+    margin-right: 9rem;
+}
+
+.block-next{
+    margin-top: 3.25rem;
+    display: table;
+    
+}
+
+.info{
+    margin-left: 5rem;
+    display: table;
+}
+
+.block_info_h{
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 60px;
+line-height: 78px;
+}
+
+.block_film_info{
+    float: left;
+    margin-bottom: 3rem;
+
+}
+
+.block_film_info1{
+    width: 6rem;
+    float: left;
+
+
+
+}
+
+.block_film_info2{
+    width: 10rem;
+    float: left;
+    
+}
+
+.block_film_text{
+    float: left;
+    width: 20.25rem;
+    height: 4.4rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.others{
+    margin-bottom: 2rem;
+}
+
+.ice{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
