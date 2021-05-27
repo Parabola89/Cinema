@@ -3,6 +3,12 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"  href="css/main.css" />
+        <script defer src='js/utils.js'></script>
+        <script defer src='js/single-film.js'></script>
+        <script defer src="js/main.js"></script>
+        <script defer src='js/film.js'></script>
+        <script defer src="js/films-table.js"></script>
+        <script defer src="js/blocks-films.js"></script>
     </head>
     <body>
         <div class="block-new">
@@ -105,46 +111,49 @@
             </div>
             <div class='block-next'>
                 <div class='picture'>
-                    <img src='images/live.png'>
+                    <img id='sf-poster' class='card_img' src='images/live.png'>
                 </div>
                 <div class='info'>
-                    <div class='block_info_h'>
-                        Живое
+                    <div class='block_info_h=' id='sf-header'>
+                        Загрузка...
                     </div>
-                    <div class='star'>
-                        <svg width="18" height="18"> 
-                            <use xlink:href="#stars"> </use>
-                        </svg>
-                        <svg width="18" height="18"> 
-                            <use xlink:href="#stars"> </use>
-                        </svg>
-                        <svg width="18" height="18"> 
-                            <use xlink:href="#stars"> </use>
-                        </svg>
-                        <svg width="18" height="18"> 
-                            <use xlink:href="#stars"> </use>
-                        </svg>
-                        <svg width="18" height="18"> 
-                            <use xlink:href="#stars"> </use>
-                        </svg>
-                         5.0     9/10 Rotten Tomatoes
-                    </div>
+                    <div class='rating'>
+                        <div class='star'>
+                            <svg data-value="1" class='rating-start star-selected' width="18" height="18"> 
+                                <use xlink:href="#stars"> </use>
+                            </svg>
+                            <svg data-value="2" class='rating-start star-selected' width="18" height="18"> 
+                                <use xlink:href="#stars"> </use>
+                            </svg>
+                            <svg data-value="3" class='rating-start star-selected' width="18" height="18"> 
+                                <use xlink:href="#stars"> </use>
+                            </svg>
+                            <svg data-value="4" class='rating-start star-selected' width="18" height="18"> 
+                                <use xlink:href="#stars"> </use>
+                            </svg>
+                            <svg data-value="5" class='rating-start star-selected' width="18" height="18"> 
+                                <use xlink:href="#stars"> </use>
+                            </svg>
+                        </div>  
+                        <p class='rating_score' id='sf-rating-number'>   </p> 
+                        Inno Rating
+                    </div>      
                     <div class='star_1'>
                         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.5 4.5H2.5V5.5H3.5V4.5ZM5.5 4.5H4.5V5.5H5.5V4.5ZM7.5 4.5H6.5V5.5H7.5V4.5ZM8.5 1H8V0H7V1H3V0H2V1H1.5C0.945 1 0.505 1.45 0.505 2L0.5 9C0.5 9.55 0.945 10 1.5 10H8.5C9.05 10 9.5 9.55 9.5 9V2C9.5 1.45 9.05 1 8.5 1ZM8.5 9H1.5V3.5H8.5V9Z" fill="#A3CC40"/>
                         </svg>
-                            25 ноября 2019 года 
+                           <p class='single_bold' id='sf-premierre'>25 ноября 2019 года</p>
                         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 0.25C3.5 0.25 1.365 1.805 0.5 4C1.365 6.195 3.5 7.75 6 7.75C8.5 7.75 10.635 6.195 11.5 4C10.635 1.805 8.5 0.25 6 0.25ZM6 6.5C4.62 6.5 3.5 5.38 3.5 4C3.5 2.62 4.62 1.5 6 1.5C7.38 1.5 8.5 2.62 8.5 4C8.5 5.38 7.38 6.5 6 6.5ZM6 2.5C5.17 2.5 4.5 3.17 4.5 4C4.5 4.83 5.17 5.5 6 5.5C6.83 5.5 7.5 4.83 7.5 4C7.5 3.17 6.83 2.5 6 2.5Z" fill="#A3CC40"/>
                         </svg>
-                            2,5k Views 
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 9.675L4.275 9.015C1.7 6.68 0 5.14 0 3.25C0 1.71 1.21 0.5 2.75 0.5C3.62 0.5 4.455 0.905 5 1.545C5.545 0.905 6.38 0.5 7.25 0.5C8.79 0.5 10 1.71 10 3.25C10 5.14 8.3 6.68 5.725 9.02L5 9.675Z" fill="#A3CC40"/>
+                         <p class='single_bold' id='sf-views'> 2,5k Views </p> 
+                        <svg id='like-icon' class='like-icon'  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" d="M5 9.675L4.275 9.015C1.7 6.68 0 5.14 0 3.25C0 1.71 1.21 0.5 2.75 0.5C3.62 0.5 4.455 0.905 5 1.545C5.545 0.905 6.38 0.5 7.25 0.5C8.79 0.5 10 1.71 10 3.25C10 5.14 8.3 6.68 5.725 9.02L5 9.675Z" />
                         </svg>
-                            000 likes
+                            <p class='single_bold'id='sf-likes'> 200 likes</p> 
                     </div>
                    
-                    <div class='block_film_text'>
+                    <div class='block_film_text' id='sf-descritpion'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -313,7 +322,7 @@
                         <path d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z" fill="#333333"/>
                     </symbol>
                     <symbol id='stars' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.9925 1.5C4.8525 1.5 1.5 4.86 1.5 9C1.5 13.14 4.8525 16.5 8.9925 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 8.9925 1.5ZM12.1725 13.5L9 11.5875L5.8275 13.5L6.6675 9.8925L3.87 7.47L7.56 7.155L9 3.75L10.44 7.1475L14.13 7.4625L11.3325 9.885L12.1725 13.5Z" fill="#A3CC40"/>
+                        <path d="M8.9925 1.5C4.8525 1.5 1.5 4.86 1.5 9C1.5 13.14 4.8525 16.5 8.9925 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 8.9925 1.5ZM12.1725 13.5L9 11.5875L5.8275 13.5L6.6675 9.8925L3.87 7.47L7.56 7.155L9 3.75L10.44 7.1475L14.13 7.4625L11.3325 9.885L12.1725 13.5Z" fill="currentColor"/>
                     </symbol> 
                         
                 </svg>  

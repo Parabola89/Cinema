@@ -618,11 +618,31 @@ img.presents_img {
     gap: 0px;
 }
 .img-films1 {
+    position: relative;
     width: 14.15rem; 
     height: 14.15rem;
-    background: url("../images/film1.jpg");
+  /*  background: url("../images/film1.jpg");*/
     background-size: cover;
+
 }
+
+.img-films1 img{
+    position: relative;
+    width: 283px;
+    height: 283px;
+}
+
+.class9-text{
+    position:absolute;
+    display: none;
+   
+}
+
+.img-films1 img:hover .class9-text{
+    display: block;
+}
+
+
 .img-films2 {
     width: 14.15rem; 
     height: 14.15rem;
@@ -876,4 +896,32 @@ line-height: 78px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.star{  
+    color: #687250;
+}
+
+.star{
+    color: #A3CC40;
+}
+
+.rating-start:hover~.rating-start{
+    color: #687250;
+
+}
+.star-selected{
+    color: #A3CC40;
+}
+
+.like-icon{
+    color: #687250;
+}
+
+.like-icon:hover{
+    color: #A3CC40;
+}
+
+.like-icon-liked{
+    color: #A3CC40;
 }
