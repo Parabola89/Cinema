@@ -634,11 +634,13 @@ img.presents_img {
 
 .class9-text{
     position:absolute;
+    left:0;
+    top:0;
     display: none;
-   
+    color: #fff;
 }
 
-.img-films1 img:hover .class9-text{
+.img-films1:hover .class9-text{
     display: block;
 }
 

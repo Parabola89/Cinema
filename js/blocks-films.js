@@ -23,13 +23,14 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FIL
         const id = `class9-films-desc-${film.filmId}`;
 
         blockFilmsWrapper.innerHTML += `
+        <a href='index1.html'>
         <div class='img-films1'>
         <img src="${film.posterUrlPreview}">
         <div class="class9-text">
         <div class="class9_films_text1">${film.nameRu}</div>    
         <div id="${id}" class="class9_films_text2">...loading</div></div>
+        </div></a>
        
-        </div>
         
         `
     
