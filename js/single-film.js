@@ -24,8 +24,6 @@ const fetchFilmMeta = async () => {
     const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}`);
     const { body } = await answer.json();
 
-    console.log(filmData);
-
     const views = document.getElementById('sf-views');
     
     const ratingNumber = document.getElementById('sf-rating-number');
@@ -48,8 +46,14 @@ const fetchFilmMeta = async () => {
 }
 
 const likeIcon = document.getElementById('like-icon');
+const FILM_KEY = `film-${filmId}`;
+const liked =  localStorage.get(FILM_KEY);
+if (liked !== null) {
+    likeIcon.classList.add('like-icon-liked');
+}
 likeIcon.addEventListener('click', async () =>{
     if (!likeIcon.classList.contains('like-icon-liked')){
+    localStorage.setItem(`film-${filmId}`, true);
     const likesCount = parseInt(likes.textContent, 10) + 1;
 
     likes.innerText = `${likesCount} Likes`;
@@ -67,19 +71,34 @@ likeIcon.addEventListener('click', async () =>{
        )}
 });
 
-for (const star of stars){
+//for (const star of stars){
+  //  star.addEventListener('click', () => {
+    //console.log(star.dataset.value);
+
+    //fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}/rating`, {
+      //  method: 'POST', 
+        //headers:{
+          //  'Content-Type': 'application/json'
+        //},
+        //body: JSON.stringify({ rating: +star.dataset.value })
+    //});
+    //})
+ //}
+$('.star').on('click', '.rating-start', function(){
     star.addEventListener('click', () => {
-    console.log(star.dataset.value);
+        console.log(star.dataset.value);
+    
+        fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}/rating`, {
+            method: 'POST', 
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ rating: +star.dataset.value })
+        });
+        })
 
-    fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}/rating`, {
-        method: 'POST', 
-        headers:{
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ rating: +star.dataset.value })
-    });
-    })
-}
+})
 
-fetchkinopoiskFilmData();
-fetchFilmMeta();
+
+//fetchkinopoiskFilmData();
+//fetchFilmMeta();

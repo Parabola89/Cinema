@@ -927,3 +927,24 @@ line-height: 78px;
 .like-icon-liked{
     color: #A3CC40;
 }
+
+.to_top{
+    float: right;
+}
+
+.skeleton-film-box{
+    width: 283px;
+    height: 283px;
+    margin: 8px;
+    animation: shine-avatar 1.6s infinite linear;
+}
+
+@keyframes shine-avatar{
+    from {
+        background-color: #CCC;
+    }
+
+    to {
+        background-color: rgb(141, 126, 185);
+    }
+}
