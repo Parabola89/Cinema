@@ -932,6 +932,11 @@ line-height: 78px;
     float: right;
 }
 
+.skeleton-box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .skeleton-film-box{
     width: 283px;
     height: 283px;

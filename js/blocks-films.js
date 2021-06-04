@@ -1,5 +1,5 @@
 const blockFilmsWrapper = document.getElementById('class9-films-wrapper');
-blockFilmsWrapper.innerHTML = '';
+// blockFilmsWrapper.innerHTML = '';
 
 const apiHeaders = {
     'accept': 'application/json',
@@ -23,7 +23,7 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FIL
         const id = `class9-films-desc-${film.filmId}`;
 
         blockFilmsWrapper.innerHTML += `
-        <a href='index1.html'>
+        <a href='index1.html?fid=${film.filmId}'>
         <div class='img-films1'>
         <img src="${film.posterUrlPreview}">
         <div class="class9-text">

@@ -1,12 +1,16 @@
 const likes = document.getElementById('sf-likes');
-const id = new URLSearchParams(location.search);
 const stars = document.querySelectorAll('.rating-start');
+// const id = new URLSearchParams(location.search);
 
-const filmId = id.get('id');
+
+сonst url = new URL(location);
+const fId = location.search.substring(5);
+
+// const filmId = id.get('id');
 
 
 const  fetchkinopoiskFilmData = async () =>{
-    const answer = await filmDetailsRequest(filmId);
+    const answer = await filmDetailsRequest(fId);
     const { data: filmData } = await answer.json();
 
  const header = document.getElementById('sf-header');
@@ -21,7 +25,7 @@ const  fetchkinopoiskFilmData = async () =>{
 }
 
 const fetchFilmMeta = async () => {
-    const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}`);
+    const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${fId}`);
     const { body } = await answer.json();
 
     const views = document.getElementById('sf-views');
@@ -100,5 +104,5 @@ $('.star').on('click', '.rating-start', function(){
 })
 
 
-//fetchkinopoiskFilmData();
-//fetchFilmMeta();
+fetchkinopoiskFilmData(fid);
+fetchFilmMeta(fid);
