@@ -22,10 +22,10 @@ function getRandomToMax(max) {
 
 
     const topFilmsRequest = () => {
-        return kinopoiskapiunofficialRequest('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FILMS&page=1`');
+        return kinopoiskapiunofficialRequest(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`);
     }
   
     const filmDetailsRequest = (id) => {
-        return kinopoiskapiunofficialRequest(`https://kinopoiskapiunofficial.tech/api/v2.1/films/${film.filmId}`);
+        return kinopoiskapiunofficialRequest(`https://kinopoiskapiunofficial.tech/api/v2.1/films/${id}`);
     }
     

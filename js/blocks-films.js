@@ -1,12 +1,12 @@
 const blockFilmsWrapper = document.getElementById('class9-films-wrapper');
-// blockFilmsWrapper.innerHTML = '';
+blockFilmsWrapper.innerHTML = '';
 
 const apiHeaders = {
     'accept': 'application/json',
     'X-API-KEY': 'd343d420-fa5f-40d5-9924-36a89cd3d612',
 }
 
-fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FILMS&page=1`, {
+fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`, {
     headers: {
         ...apiHeaders
     }
@@ -23,7 +23,7 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FIL
         const id = `class9-films-desc-${film.filmId}`;
 
         blockFilmsWrapper.innerHTML += `
-        <a href='index1.html?fid=${film.filmId}'>
+        <a href='index1.html?fid=${id}'>
         <div class='img-films1'>
         <img src="${film.posterUrlPreview}">
         <div class="class9-text">
@@ -35,7 +35,7 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FIL
         `
     
 
-    fetch(`https://kinopoiskapiunofficial.tech/api/v2.1/films/${film.filmId}`, {
+    fetch(`https://kinopoiskapiunofficial.tech/api/v2.1/films/${id}`, {
     headers: {
       ...apiHeaders
     },

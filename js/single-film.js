@@ -3,7 +3,7 @@ const stars = document.querySelectorAll('.rating-start');
 // const id = new URLSearchParams(location.search);
 
 
-сonst url = new URL(location);
+const url = new URL(location);
 const fId = location.search.substring(5);
 
 // const filmId = id.get('id');
