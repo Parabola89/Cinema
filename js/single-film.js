@@ -5,6 +5,7 @@ const stars = document.querySelectorAll('.rating-start');
 
 const url = new URL(location);
 const fId = location.search.substring(5);
+const filmId = fId;
 
 // const filmId = id.get('id');
 
@@ -51,7 +52,7 @@ const fetchFilmMeta = async () => {
 
 const likeIcon = document.getElementById('like-icon');
 const FILM_KEY = `film-${filmId}`;
-const liked =  localStorage.get(FILM_KEY);
+const liked =  localStorage.getItem(FILM_KEY);
 if (liked !== null) {
     likeIcon.classList.add('like-icon-liked');
 }
@@ -104,5 +105,5 @@ $('.star').on('click', '.rating-start', function(){
 })
 
 
-fetchkinopoiskFilmData(fid);
-fetchFilmMeta(fid);
+fetchkinopoiskFilmData(fId);
+fetchFilmMeta(fId);

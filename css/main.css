@@ -368,6 +368,16 @@ form {
     width: 45%;
     padding-left: 6%; 
 }
+.chb1_class {
+    font-size: 0.95rem;
+    color: #6c6c6c;
+    padding: 0.75rem 0.55rem;
+    border: 1px solid #bebebe;
+    border-radius: 0.25rem;
+    outline: 0;
+    width: auto;
+    transition: .2s;
+}
 .table_td1 {
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -431,6 +441,12 @@ form {
     text-align: left;
     margin-bottom: 6.8rem;
   
+}
+.session {
+    Width: 42.45rem;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 0.5rem;
 }
 .present {
     margin-top: 4.15rem;
@@ -507,9 +523,7 @@ img.presents_img {
     background-color: rgb(144, 210, 61);
     border-radius: 0.75rem;
     width: 9.5rem;
-    margin-left: 59rem;
     margin-bottom: 8rem;
-
 }
 .parent_reviews {
     min-height: 100vh;
@@ -953,3 +967,4 @@ line-height: 78px;
         background-color: rgb(141, 126, 185);
     }
 }
+

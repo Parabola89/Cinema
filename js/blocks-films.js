@@ -20,7 +20,7 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPUL
 
    for (let i = 0; i < LIMIT-1; i++) {
        const film = data.films[i];
-        const id = `class9-films-desc-${film.filmId}`;
+        const id = `${film.filmId}`;
 
         blockFilmsWrapper.innerHTML += `
         <a href='index1.html?fid=${id}'>

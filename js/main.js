@@ -13,13 +13,13 @@
     })
   })
 
- $('.to_top:first').click(function () {
+ $('.to_top').click(function () {
    $('html').animate({ scrollTop: 0 }, 3000);
- })
+ });
 
 
 
-$('.dropdown_list:first').slideUp(0);
-$('.dropdown_trigger:first').on('click', function() {
-$('.dropdown_list:first').slideToggle();
+$('.dropdown_list').slideUp(0);
+$('.dropdown_trigger').on('click', function() {
+$('.dropdown_list').slideToggle();
 });
