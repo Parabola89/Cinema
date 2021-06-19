@@ -6,7 +6,7 @@ const apiHeaders = {
     'X-API-KEY': 'd343d420-fa5f-40d5-9924-36a89cd3d612',
 }
 
-fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`, {
+fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=1`, {
     headers: {
         ...apiHeaders
     }
@@ -14,7 +14,7 @@ fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`, {
 .then(data => data.json())
 .then(data => {
 
-    const LIMIT = 8;
+    const LIMIT = 10;
  
    // data.films.forEach((film) => {
 

@@ -25,7 +25,7 @@ const  fetchkinopoiskFilmData = async () =>{
 }
 
 const fetchFilmMeta = async () => {
-    const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${fId}`);
+    const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}`);
     const { body } = await answer.json();
 
     const views = document.getElementById('sf-views');
